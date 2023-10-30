@@ -15,20 +15,28 @@
     - maven
 
 - name: Download WebGoat jar from GitHub
+  become: true
+  become_user: root
   get_url:
     url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
     dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
 
 - name: Update apt cache
+  become: true
+  become_user: root
   apt:
     update_cache: yes
 
 - name: Install OpenJDK 17
+  become: true
+  become_user: root
   apt:
     name: openjdk-17-jdk
     state: present
 
 - name: Run WebGoat
+  become: true
+  become_user: root
   command:
     cmd: java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -jar /path/where/you/want/to/store/webgoat-2023.4.jar
   async: 45  # Adjust this value based on how long you expect the command to run
