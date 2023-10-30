@@ -4,3 +4,14 @@
 
 - include_role:
     name: "dt-oneagent-classic"
+
+- include_role:
+    name: "app-webgoat"
+
+- include_role:
+    name: app-webgoat
+    tasks_from: deploy-ingress
+
+- include_role:
+    name: app-webgoat
+    tasks_from: source-endpoints    
