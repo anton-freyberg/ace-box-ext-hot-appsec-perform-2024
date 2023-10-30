@@ -14,38 +14,23 @@
     - net-tools
     - maven
 
-- name: Ensure install-java.sh is executable
-  file:
-    path: "{{ role_path }}/files/repo/setup/install-java.sh"
-    mode: '0755'
+- name: Download WebGoat jar from GitHub
+      get_url:
+        url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
+        dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
 
+- name: Update apt cache
+      apt:
+        update_cache: yes
 
-- name: Install specific Java version 
-  shell: 
-    cmd: "./install-java.sh"
-    chdir: "{{ role_path }}/files/repo/setup"
-  become: true
-  become_user: root
+- name: Install OpenJDK 17
+  apt:
+    name: openjdk-17-jdk
+    state: present
 
-- name: Stop and remove existing Webgoat container if it exists
-  command: docker rm -f webgoat
-  ignore_errors: true
-
-- name: Run Webgoat
-  shell: 
-    cmd: "docker run -d --name webgoat -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat"
-    chdir: "{{ role_path }}/files/repo/setup"
-
-- name: Wait for Webgoat to be up
-  uri:
-    url: "http://localhost:{{ webgoat_port }}/WebGoat"
-    status_code: 200
-    validate_certs: no
-  register: result
-  retries: 60
-  delay: 5
-  until: result.status == 200
-
-
-
-  
+- name: Run WebGoat
+  command:
+    cmd: java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -jar /path/where/you/want/to/store/webgoat-2023.4.jar
+  async: 45  # Adjust this value based on how long you expect the command to run
+  poll: 0
+  register: webgoat_bg
