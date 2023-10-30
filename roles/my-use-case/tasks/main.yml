@@ -1,0 +1,6 @@
+---
+- include_role:
+    name: "microk8s"
+
+- include_role:
+    name: "dt-oneagent-classic"

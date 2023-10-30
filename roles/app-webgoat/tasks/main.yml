@@ -1,0 +1,51 @@
+---
+- name: Install apt packages
+  become: true
+  become_user: root
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+    - apt-transport-https
+    - software-properties-common
+    - jq
+    - net-tools
+    - maven
+
+- name: Ensure install-java.sh is executable
+  file:
+    path: "{{ role_path }}/files/repo/setup/install-java.sh"
+    mode: '0755'
+
+
+- name: Install specific Java version 
+  shell: 
+    cmd: "./install-java.sh"
+    chdir: "{{ role_path }}/files/repo/setup"
+  become: true
+  become_user: root
+
+- name: Stop and remove existing Webgoat container if it exists
+  command: docker rm -f webgoat
+  ignore_errors: true
+
+- name: Run Webgoat
+  shell: 
+    cmd: "docker run -d --name webgoat -p 127.0.0.1:8080:8080 -p 127.0.0.1:9090:9090 webgoat/webgoat"
+    chdir: "{{ role_path }}/files/repo/setup"
+
+- name: Wait for Webgoat to be up
+  uri:
+    url: "http://localhost:{{ webgoat_port }}/WebGoat"
+    status_code: 200
+    validate_certs: no
+  register: result
+  retries: 60
+  delay: 5
+  until: result.status == 200
+
+
+
+  

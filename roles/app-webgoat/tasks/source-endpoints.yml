@@ -1,0 +1,4 @@
+---
+- name: Set facts
+  set_fact:
+    webgoat_endpoint: "http://{{ webgoat_domain }}"

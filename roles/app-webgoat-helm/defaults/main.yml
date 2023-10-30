@@ -1,0 +1,4 @@
+---
+webgoat_port: 8080
+webgoat_domain: "webgoat.{{ ingress_domain }}"
+webgoat_namespace: "webgoat"

@@ -1,0 +1,4 @@
+apiVersion: v2
+name: webgoat-helm
+description: A Helm chart to deploy WebGoat
+version: 0.1.0

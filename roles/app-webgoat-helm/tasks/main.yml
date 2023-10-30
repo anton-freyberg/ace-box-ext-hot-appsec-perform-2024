@@ -1,0 +1,51 @@
+---
+- name: Install apt packages
+  become: true
+  become_user: root
+  apt:
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+    - apt-transport-https
+    - software-properties-common
+    - jq
+    - net-tools
+    - maven
+
+- name: Ensure install-java.sh is executable
+  file:
+    path: "{{ role_path }}/files/repo/setup/install-java.sh"
+    mode: '0755'
+
+
+- name: Install specific Java version 
+  shell: 
+    cmd: "./install-java.sh"
+    chdir: "{{ role_path }}/files/repo/setup"
+  become: true
+  become_user: root
+
+- name: Deploy Unguard
+  kubernetes.core.helm:
+    name: unguard
+    chart_ref: "{{ role_path }}/files/repo/helm/webgoat"
+    release_namespace: "{{ webgoat_namespace }}"
+    create_namespace: true
+    wait: true
+    wait_timeout: 10m
+
+- name: Wait for Webgoat to be up
+  uri:
+    url: "http://localhost:{{ webgoat_port }}/WebGoat"
+    status_code: 200
+    validate_certs: no
+  register: result
+  retries: 60
+  delay: 5
+  until: result.status == 200
+
+
+
+  
