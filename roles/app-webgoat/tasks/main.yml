@@ -18,7 +18,8 @@
   become: true
   become_user: root
   get_url:
-    url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
+    #url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
+    url: https://github.com/WebGoat/WebGoat/releases/download/7.1/webgoat-container-7.1-exec.jar
     dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
 
 - name: Update apt cache
