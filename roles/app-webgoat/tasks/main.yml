@@ -38,7 +38,7 @@
   become: true
   become_user: root
   command:
-    cmd: "java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar {{ role_path }}/files/repo/webgoat-2023.4.jar"
+    cmd: "sudo java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar {{ role_path }}/files/repo/webgoat-2023.4.jar"
   async: 45  # Adjust this value based on how long you expect the command to run
   poll: 0
   register: webgoat_bg
