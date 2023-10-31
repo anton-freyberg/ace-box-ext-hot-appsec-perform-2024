@@ -28,12 +28,20 @@
   apt:
     update_cache: yes
 
-- name: Install OpenJDK 17
+- name: Install OpenJDK 11
   become: true
   become_user: root
   apt:
-    name: openjdk-17-jdk
+    name: openjdk-11-jdk
     state: present
+
+
+#- name: Install OpenJDK 17
+#  become: true
+#  become_user: root
+#  apt:
+#    name: openjdk-17-jdk
+#    state: present
 
 - name: Run WebGoat
   become: true
