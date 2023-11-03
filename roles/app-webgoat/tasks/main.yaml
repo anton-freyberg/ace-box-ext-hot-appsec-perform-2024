@@ -15,6 +15,7 @@
   git:
     repo: 'https://github.com/WebGoat/WebGoat.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat'
+    version: '7.1'
   
 - name: Clone WebGoat-Lessons repository
   become: true
@@ -22,6 +23,7 @@
   git:
     repo: 'https://github.com/WebGoat/WebGoat-Lessons.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
+    version: '7.1'
   
 - name: Execute mvn package in WebGoat directory
   become: true
@@ -29,8 +31,6 @@
   command:
     cmd: 'mvn package'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat'
-  register: mvn_package_result
-  changed_when: "'BUILD SUCCESS' in mvn_package_result.stdout"
 
 - name: Run webgoat-standalone jar
   become: true
