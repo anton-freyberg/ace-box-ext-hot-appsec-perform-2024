@@ -40,5 +40,5 @@
   become: true
   become_user: root
   command:
-    cmd: 'sudo nohup java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-SNAPSHOT-exec.jar
+    cmd: "sudo nohup java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-SNAPSHOT-exec.jar"
     chdir: '{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target'
