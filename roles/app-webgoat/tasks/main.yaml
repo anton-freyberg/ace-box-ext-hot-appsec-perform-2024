@@ -26,5 +26,5 @@
 
 - name: Run webgoat-standalone jar
   command:
-    cmd: 'nohup java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-SNAPSHOT-exec.jar > /path/to/destination/webgoat.log 2>&1 &'
+    cmd: 'sudo nohup java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-SNAPSHOT-exec.jar > /path/to/destination/webgoat.log 2>&1 &'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target'
