@@ -1,5 +1,7 @@
 ---
 - name: Install necessary packages
+  become: true
+  become_user: root
   apt:
     name:
       - git
@@ -8,16 +10,22 @@
     state: present
     
 - name: Clone WebGoat repository
+  become: true
+  become_user: root
   git:
     repo: 'https://github.com/WebGoat/WebGoat.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat'
   
 - name: Clone WebGoat-Lessons repository
+  become: true
+  become_user: root
   git:
     repo: 'https://github.com/WebGoat/WebGoat-Lessons.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
   
 - name: Execute mvn package in WebGoat directory
+  become: true
+  become_user: root
   command:
     cmd: 'mvn package'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat'
@@ -25,6 +33,8 @@
   changed_when: "'BUILD SUCCESS' in mvn_package_result.stdout"
 
 - name: Run webgoat-standalone jar
+  become: true
+  become_user: root
   command:
     cmd: 'sudo nohup java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-SNAPSHOT-exec.jar > /path/to/destination/webgoat.log 2>&1 &'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target'
