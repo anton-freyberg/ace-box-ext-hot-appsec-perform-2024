@@ -9,20 +9,19 @@
       - openjdk-11-jdk  # Assuming you want to use Java 11
     state: present
     
+  
 - name: Clone WebGoat repository
   become: true
   become_user: root
-  git:
-    repo: 'https://github.com/WebGoat/WebGoat.git'
-    dest: '{{ role_path }}/files/repo_latest/WebGoat'
-    version: '7.1'
-    depth: 0
+  command:
+    cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
+    chdir: "{{ role_path }}/files/repo_latest"
   
 - name: Clone WebGoat-Lessons repository
   become: true
   become_user: root
   command:
-    cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
+    cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
   
 - name: Execute mvn package in WebGoat directory
