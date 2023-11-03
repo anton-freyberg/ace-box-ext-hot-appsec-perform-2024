@@ -16,6 +16,7 @@
     repo: 'https://github.com/WebGoat/WebGoat.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat'
     version: '7.1'
+    depth: 0
   
 - name: Clone WebGoat-Lessons repository
   become: true
@@ -24,6 +25,7 @@
     repo: 'https://github.com/WebGoat/WebGoat-Lessons.git'
     dest: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
     version: '7.1'
+    depth: 0
   
 - name: Execute mvn package in WebGoat directory
   become: true
