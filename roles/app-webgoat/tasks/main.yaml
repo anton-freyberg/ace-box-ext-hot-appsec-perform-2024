@@ -23,6 +23,7 @@
   become_user: root
   command:
     cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
   
 - name: Execute mvn package in WebGoat directory
   become: true
