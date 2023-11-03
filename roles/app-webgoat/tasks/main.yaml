@@ -8,7 +8,12 @@
       - maven
       - openjdk-11-jdk  # Assuming you want to use Java 11
     state: present
-    
+
+- name: create folder structure
+  become: true
+  become_user: root
+  command:
+    cmd: 'mkdir {{ role_path }}/files/repo_latest'
   
 - name: Clone WebGoat repository
   become: true
