@@ -35,6 +35,27 @@
     cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
 
+- name: Compiling Lessons
+  become: true
+  become_user: root
+  shell: |
+    git checkout develop &&
+    mvn clean compile install
+  args:
+    chdir: {{ role_path }}/files/repo_latest/WebGoat
+    executable: /bin/bash
+
+- name: Copy lessons over
+  become: true
+  become_user: root
+  shell: |
+    git checkout develop &&
+    mvn package &&
+    cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/ &&
+  args:
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
+    executable: /bin/bash
+
 - name: Update apt cache
   become: true
   become_user: root
