@@ -32,7 +32,7 @@
   
 - name: Install specific Java version 
   shell: 
-    cmd: "./install-java.sh"
-    chdir: "{{ role_path }}/files/repo/setup"
+    cmd: "./webgoat_developer_bootstrap.sh"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
   become: true
   become_user: root
