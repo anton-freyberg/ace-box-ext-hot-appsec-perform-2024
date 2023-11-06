@@ -42,7 +42,7 @@
     git checkout develop &&
     mvn clean compile install
   args:
-    chdir: {{ role_path }}/files/repo_latest/WebGoat
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
     executable: /bin/bash
 
 - name: Copy lessons over
