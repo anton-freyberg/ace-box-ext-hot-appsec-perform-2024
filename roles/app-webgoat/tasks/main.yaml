@@ -6,7 +6,7 @@
     name:
       - git
       - maven
-      - openjdk-11-jdk  # Assuming you want to use Java 11
+      - openjdk-8-jdk  # Assuming you want to use Java 11
     state: present
 
 - name: create folder structure
