@@ -13,6 +13,20 @@
     - jq
     - net-tools
     - maven
+- name: Update apt cache
+  become: true
+  become_user: root
+  apt:
+    update_cache: yes
+
+- name: Install OpenJDK 8
+  become: true
+  become_user: root
+  apt:
+    name: openjdk-8-jdk
+    state: present
+
+
 
 - name: create folder structure
   become: true
@@ -51,36 +65,38 @@
 - name: Compiling Lessons
   become: true
   become_user: root
-  shell: |
-    git checkout develop &&
-    mvn clean compile install
-  args:
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-    executable: /bin/bash
+  command:
+    cmd: 'git checkout develop'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+
+- name: Compiling Lessons
+  become: true
+  become_user: root
+  command:
+    cmd: 'mvn clean compile install'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+
+- name: git checkout develop
+  become: true
+  become_user: root
+  command:
+    cmd: 'git checkout develop'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
+
+- name:  mvn package
+  become: true
+  become_user: root
+  command:
+    cmd: 'mvn package'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
 - name: Copy lessons over
   become: true
   become_user: root
-  shell: |
-    git checkout develop &&
-    mvn package &&
-    cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/ &&
+  cmd: "cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
   args:
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
     executable: /bin/bash
-
-- name: Update apt cache
-  become: true
-  become_user: root
-  apt:
-    update_cache: yes
-
-- name: Install OpenJDK 8
-  become: true
-  become_user: root
-  apt:
-    name: openjdk-8-jdk
-    state: present
 
 - name: Execute mvn package in WebGoat directory
   become: true
