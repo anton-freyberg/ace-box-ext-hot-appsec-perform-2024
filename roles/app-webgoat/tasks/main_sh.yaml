@@ -30,24 +30,9 @@
     cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
   
-- name: Execute mvn package in WebGoat directory
+- name: Install specific Java version 
+  shell: 
+    cmd: "./install-java.sh"
+    chdir: "{{ role_path }}/files/repo/setup"
   become: true
   become_user: root
-  command:
-    cmd: 'mvn package'
-    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
-    
-
-#- name: Ensure webgoat-standalone-7.1-SNAPSHOT-exec.jarh is executable
-#  file:
-#    path: "{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target/webgoat-standalone-7.1-exec.jar > /var/log/webgoat.log 2>&1"
-#    mode: '0755'
-
-- name: Run webgoat-standalone jar
-  become: true
-  become_user: root
-  command:
-    cmd: "sudo java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone/target/webgoat-standalone-7.1-exec.jar > /var/log/webgoat.log 2>&1"
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-  async: 3600  # This will let the task run for 1 hour, adjust as needed
-  poll: 0 
