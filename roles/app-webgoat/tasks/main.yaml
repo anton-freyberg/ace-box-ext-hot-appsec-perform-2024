@@ -21,9 +21,21 @@
     path: "{{ role_path }}/files/repo_latest"
     state: directory
 
+- name: Check if WebGoat repository exists
+  stat:
+    path: "{{ role_path }}/files/repo_latest/WebGoat"
+  register: webgoat_repo
+
+- name: Check if WebGoat-Lessons repository exists
+  stat:
+    path: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
+  register: webgoat_lessons_repo
+
+  
 - name: Clone WebGoat repository
   become: true
   become_user: root
+  when: not webgoat_repo.stat.exists
   command:
     cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
     chdir: "{{ role_path }}/files/repo_latest"
@@ -31,6 +43,7 @@
 - name: Clone WebGoat-Lessons repository
   become: true
   become_user: root
+  when: webgoat_lessons_repo.stat.exists
   command:
     cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
