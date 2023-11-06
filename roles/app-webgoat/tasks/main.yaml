@@ -47,5 +47,5 @@
   become: true
   become_user: root
   command:
-    cmd: "sudo java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-exec.jar"
+    cmd: "sudo java -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar webgoat-standalone-7.1-exec.jar > /var/log/webgoat.log 2>&1"
     chdir: '{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target'
