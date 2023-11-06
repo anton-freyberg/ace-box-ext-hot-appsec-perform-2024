@@ -1,38 +1,43 @@
 ---
-- name: Install necessary packages
+- name: Install apt packages
   become: true
   become_user: root
   apt:
-    name:
-      - git
-      - maven
-      - openjdk-8-jdk  # Assuming you want to use Java 11
+    name: "{{ packages }}"
+    state: present
+    update_cache: yes
+  vars:
+    packages:
+    - apt-transport-https
+    - software-properties-common
+    - jq
+    - net-tools
+    - maven
+
+- name: Download WebGoat jar from GitHub
+  become: true
+  become_user: root
+  get_url:
+    url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
+    dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
+
+- name: Update apt cache
+  become: true
+  become_user: root
+  apt:
+    update_cache: yes
+
+- name: Install OpenJDK 17
+  become: true
+  become_user: root
+  apt:
+    name: openjdk-17-jdk
     state: present
 
-- name: create folder structure
-  become: true
-  become_user: root
-  file:
-    path: "{{ role_path }}/files/repo_latest"
-    state: directory
 
-- name: Clone WebGoat repository
+- name: Run WebGoat
   become: true
   become_user: root
   command:
-    cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
-    chdir: "{{ role_path }}/files/repo_latest"
-  
-- name: Clone WebGoat-Lessons repository
-  become: true
-  become_user: root
-  command:
-    cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
-    chdir: "{{ role_path }}/files/repo_latest"
-  
-- name: Install specific Java version 
-  shell: 
-    cmd: "./webgoat_developer_bootstrap.sh"
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-  become: true
-  become_user: root
+    cmd: "sudo java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar {{ role_path }}/files/repo/webgoat-2023.4.jar > /var/log/webgoat.log 2>&1"
+    warn: false
