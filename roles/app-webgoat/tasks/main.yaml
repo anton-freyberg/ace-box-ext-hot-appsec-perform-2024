@@ -14,6 +14,13 @@
     - net-tools
     - maven
 
+- name: create folder structure
+  become: true
+  become_user: root
+  file:
+    path: "{{ role_path }}/files/repo_latest"
+    state: directory
+
 - name: Clone WebGoat repository
   become: true
   become_user: root
