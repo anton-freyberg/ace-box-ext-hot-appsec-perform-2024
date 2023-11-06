@@ -56,5 +56,5 @@
   poll: 0
   command:
     cmd: "sudo java  -Dserver.address=0.0.0.0 -jar webgoat-2023.4.jar > /var/log/webgoat.log 2>&1"
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
     warn: false
