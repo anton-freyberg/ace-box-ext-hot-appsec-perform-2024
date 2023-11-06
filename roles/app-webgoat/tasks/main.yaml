@@ -40,7 +40,7 @@
 
 #- name: Ensure webgoat-standalone-7.1-SNAPSHOT-exec.jarh is executable
 #  file:
-#    path: "{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target/webgoat-standalone-7.1-exec.jar"
+#    path: "{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target/webgoat-standalone-7.1-exec.jar > /var/log/webgoat.log 2>&1"
 #    mode: '0755'
 
 - name: Run webgoat-standalone jar
