@@ -35,11 +35,12 @@
   command:
     cmd: 'mvn package'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+    
 
-- name: Ensure webgoat-standalone-7.1-SNAPSHOT-exec.jarh is executable
-  file:
-    path: "{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target/webgoat-standalone-7.1-exec.jar"
-    mode: '0755'
+#- name: Ensure webgoat-standalone-7.1-SNAPSHOT-exec.jarh is executable
+#  file:
+#    path: "{{ role_path }}/files/repo_latest/WebGoat/webgoat-standalone/target/webgoat-standalone-7.1-exec.jar"
+#    mode: '0755'
 
 - name: Run webgoat-standalone jar
   become: true
