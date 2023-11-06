@@ -93,10 +93,9 @@
 - name: Copy lessons over
   become: true
   become_user: root
-  cmd: "cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
-  args:
+  command:
+    cmd: "cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
-    executable: /bin/bash
 
 - name: Execute mvn package in WebGoat directory
   become: true
