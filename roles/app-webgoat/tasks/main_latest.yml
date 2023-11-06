@@ -18,8 +18,7 @@
   become: true
   become_user: root
   get_url:
-    #url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
-    url: https://s3.amazonaws.com/webgoat-war/webgoat-standalone-7.1-SNAPSHOT-exec.jar
+    url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
     dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
 
 - name: Update apt cache
@@ -28,20 +27,13 @@
   apt:
     update_cache: yes
 
-- name: Install OpenJDK 11
+- name: Install OpenJDK 17
   become: true
   become_user: root
   apt:
-    name: openjdk-11-jdk
+    name: openjdk-17-jdk
     state: present
 
-
-#- name: Install OpenJDK 17
-#  become: true
-#  become_user: root
-#  apt:
-#    name: openjdk-17-jdk
-#    state: present
 
 - name: Run WebGoat
   become: true
