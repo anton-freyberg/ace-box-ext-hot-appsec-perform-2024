@@ -52,9 +52,9 @@
 - name: Run WebGoat
   become: true
   become_user: root
+  async: 3600  # This will let the task run for 1 hour, adjust as needed
+  poll: 0
   command:
     cmd: "sudo java  -Dserver.address=0.0.0.0 -jar webgoat-2023.4.jar > /var/log/webgoat.log 2>&1"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat
     warn: false
-  async: 3600  # This will let the task run for 1 hour, adjust as needed
-  poll: 0 
