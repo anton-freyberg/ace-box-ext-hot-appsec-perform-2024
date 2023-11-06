@@ -14,12 +14,19 @@
     - net-tools
     - maven
 
-- name: Download WebGoat jar from GitHub
+- name: Clone WebGoat repository
   become: true
   become_user: root
-  get_url:
-    url: https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar
-    dest: "{{ role_path }}/files/repo/webgoat-2023.4.jar"  # Change this to your desired location
+  command:
+    cmd: 'git clone --branch 7.1 https://github.com/WebGoat/WebGoat.git'
+    chdir: "{{ role_path }}/files/repo_latest"
+  
+- name: Clone WebGoat-Lessons repository
+  become: true
+  become_user: root
+  command:
+    cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
+    chdir: "{{ role_path }}/files/repo_latest"
 
 - name: Update apt cache
   become: true
@@ -27,17 +34,27 @@
   apt:
     update_cache: yes
 
-- name: Install OpenJDK 17
+- name: Install OpenJDK 8
   become: true
   become_user: root
   apt:
-    name: openjdk-17-jdk
+    name: openjdk-8-jdk
     state: present
 
+- name: Execute mvn package in WebGoat directory
+  become: true
+  become_user: root
+  command:
+    cmd: 'mvn package'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+    
 
 - name: Run WebGoat
   become: true
   become_user: root
   command:
-    cmd: "sudo java -Dfile.encoding=UTF-8 -Dwebgoat.port=8080 -Dwebwolf.port=9090 -Dserver.address=0.0.0.0 -jar {{ role_path }}/files/repo/webgoat-2023.4.jar > /var/log/webgoat.log 2>&1"
+    cmd: "sudo java  -Dserver.address=0.0.0.0 -jar webgoat-2023.4.jar > /var/log/webgoat.log 2>&1"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat
     warn: false
+  async: 3600  # This will let the task run for 1 hour, adjust as needed
+  poll: 0 
