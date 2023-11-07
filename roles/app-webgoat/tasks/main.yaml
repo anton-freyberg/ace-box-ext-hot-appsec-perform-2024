@@ -14,6 +14,12 @@
     - net-tools
     - maven
 
+- name: Remove all java versions 
+  become: true
+  become_user: root
+  command:
+    cmd: 'sudo apt-get remove openjdk-*'
+
 - name: Install OpenJDK 8
   become: true
   become_user: root
