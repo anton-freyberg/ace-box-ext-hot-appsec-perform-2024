@@ -57,7 +57,7 @@
 - name: Clone WebGoat-Lessons repository
   become: true
   become_user: root
-  when: webgoat_lessons_repo.stat.exists
+  when: not webgoat_lessons_repo.stat.exists
   command:
     cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
@@ -76,12 +76,19 @@
     cmd: "mvn clean compile install"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
+- name: make webgoat-lessons repo safe
+  become: true
+  become_user: root
+  command:
+    cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat-Lessons'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
+
 - name: make webgoat repo safe
   become: true
   become_user: root
   command:
     cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat'
-    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
 
 - name: git checkout develop
   become: true
