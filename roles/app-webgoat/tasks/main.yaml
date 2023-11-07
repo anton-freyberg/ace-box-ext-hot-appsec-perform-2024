@@ -105,11 +105,18 @@
     cmd: 'mvn package'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
+- name: Clone WebGoat repository
+  become: true
+  become_user: root
+  command:
+    cmd: 'sudo chmod +x target/plugins/*.jar'
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
+
 - name: Copy lessons over
   become: true
   become_user: root
   command:
-    cmd: "chmod +x target/*.jar && cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
+    cmd: "sudo cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
 
 - name: Execute mvn package in WebGoat directory
