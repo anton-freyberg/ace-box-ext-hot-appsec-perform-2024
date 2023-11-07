@@ -26,7 +26,7 @@
     name: openjdk-8-jdk
     state: present
 
- - name: Install OpenJDK 8
+- name: Install OpenJDK 8
   become: true
   become_user: root
   apt:
