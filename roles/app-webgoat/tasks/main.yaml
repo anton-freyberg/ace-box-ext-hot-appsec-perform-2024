@@ -13,7 +13,14 @@
     - jq
     - net-tools
     - maven
-    - openjdk-8-jdk
+
+- name: Install OpenJDK 8
+  become: true
+  become_user: root
+  apt:
+    name: openjdk-8-jdk
+    state: present
+
 - name: Update apt cache
   become: true
   become_user: root
