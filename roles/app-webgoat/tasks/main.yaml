@@ -109,7 +109,7 @@
   become: true
   become_user: root
   command:
-    cmd: 'sudo chmod +x target/plugins/*.jar'
+    cmd: 'sudo chmod +x -R +x target/plugins/*'
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
 
 - name: Copy lessons over
