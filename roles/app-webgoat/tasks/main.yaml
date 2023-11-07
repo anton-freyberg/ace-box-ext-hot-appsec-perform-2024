@@ -109,7 +109,7 @@
   become: true
   become_user: root
   command:
-    cmd: "cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
+    cmd: "chmod +x target/*.jar && cp target/plugins/*.jar ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
 
 - name: Execute mvn package in WebGoat directory
