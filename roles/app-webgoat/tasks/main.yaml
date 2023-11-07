@@ -94,7 +94,7 @@
   become: true
   become_user: root
   command:
-    cmd: "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean compile install"
+    cmd: " sudo JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean compile install"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
 
