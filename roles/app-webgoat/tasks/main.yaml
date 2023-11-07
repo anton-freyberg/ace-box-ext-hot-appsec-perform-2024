@@ -62,20 +62,6 @@
     cmd: 'git clone https://github.com/WebGoat/WebGoat-Lessons.git'
     chdir: "{{ role_path }}/files/repo_latest"
 
-- name: Compiling Lessons
-  become: true
-  become_user: root
-  command:
-    cmd: "git checkout develop"
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-
-- name: Compiling Lessons
-  become: true
-  become_user: root
-  command:
-    cmd: "mvn clean compile install"
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-
 - name: make webgoat-lessons repo safe
   become: true
   become_user: root
@@ -89,6 +75,20 @@
   command:
     cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+
+- name: Compiling Lessons
+  become: true
+  become_user: root
+  command:
+    cmd: "git checkout develop"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
+
+- name: Compiling Lessons
+  become: true
+  become_user: root
+  command:
+    cmd: "mvn clean compile install"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
 - name: git checkout develop
   become: true
