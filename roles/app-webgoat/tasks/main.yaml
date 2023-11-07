@@ -12,7 +12,6 @@
     - software-properties-common
     - jq
     - net-tools
-    - maven
 
 - name: Remove all java versions 
   become: true
@@ -26,6 +25,14 @@
   apt:
     name: openjdk-8-jdk
     state: present
+
+ - name: Install OpenJDK 8
+  become: true
+  become_user: root
+  apt:
+    name: maven
+    state: present   
+
 
 - name: Update apt cache
   become: true
