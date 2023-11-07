@@ -83,11 +83,11 @@
     cmd: "git checkout develop"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
-- name: Compiling Lessons
+- name: mvn compile webgoat
   become: true
   become_user: root
   command:
-    cmd: "mvn clean compile install"
+    cmd: "mvn clean compile install && mvn clean compile install"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
 - name: git checkout develop
