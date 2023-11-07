@@ -110,7 +110,7 @@
   become: true
   become_user: root
   command:
-    cmd: "sudo cp target/plugins/* ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
+    cmd: "sudo cp -r target/plugins/ ../WebGoat/webgoat-container/src/main/webapp/plugin_lessons/"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat-Lessons"
 
 - name: Execute mvn package in WebGoat directory
