@@ -94,25 +94,9 @@
   become: true
   become_user: root
   command:
-    cmd: "git checkout develop"
+    cmd: "JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean compile install"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
-- name: mvn compile webgoat
-  become: true
-  become_user: root
-  shell: |
-    git checkout develop && 
-    JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64 mvn clean compile install
-  args:
-    executable: /bin/bash
-    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
-
-- name: git checkout develop
-  become: true
-  become_user: root
-  command:
-    cmd: 'git checkout develop'
-    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
 - name:  mvn package
   become: true
