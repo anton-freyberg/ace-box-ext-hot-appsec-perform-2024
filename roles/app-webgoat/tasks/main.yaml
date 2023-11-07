@@ -86,8 +86,11 @@
 - name: mvn compile webgoat
   become: true
   become_user: root
-  command:
-    cmd: "mvn clean compile install && mvn clean compile install"
+    shell: |
+    git checkout develop &&
+    mvn clean compile install
+  args:
+    executable: /bin/bash
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
 - name: git checkout develop
