@@ -105,7 +105,7 @@
     cmd: 'mvn package'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
-- name: Clone WebGoat repository
+- name: make sure target/plugins is executable
   become: true
   become_user: root
   command:
