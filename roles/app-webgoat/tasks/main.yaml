@@ -76,6 +76,12 @@
     cmd: "mvn clean compile install"
     chdir: "{{ role_path }}/files/repo_latest/WebGoat"
 
+- name: make webgoat repo safe
+  become: true
+  become_user: root
+  command:
+    cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat'
+    chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
 - name: git checkout develop
   become: true
