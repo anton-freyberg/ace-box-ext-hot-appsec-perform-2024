@@ -66,8 +66,16 @@
   become: true
   become_user: root
   command:
-    cmd: 'git checkout develop && mvn clean compile install'
-    chdir: '{{ role_path }}/files/repo_latest/WebGoat'
+    cmd: "git checkout develop"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
+
+- name: Compiling Lessons
+  become: true
+  become_user: root
+  command:
+    cmd: "mvn clean compile install"
+    chdir: "{{ role_path }}/files/repo_latest/WebGoat"
+
 
 - name: git checkout develop
   become: true
