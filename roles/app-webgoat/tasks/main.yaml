@@ -21,6 +21,8 @@
     update_cache: yes
 
 - name: Set JAVA_HOME for Maven
+  become: true
+  become_user: root
   lineinfile:
     path: /etc/environment
     state: present
