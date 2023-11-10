@@ -17,6 +17,9 @@
     tasks_from: source-endpoints
 
 
+# Depoy monaco config from app-unguard (add ownership)
+# deploy monaco config custom to this HOT: Workflows, ownership, notebooks?
+
 #- include_role:
 #    name: monaco
 #    tasks_from: apply-monaco
