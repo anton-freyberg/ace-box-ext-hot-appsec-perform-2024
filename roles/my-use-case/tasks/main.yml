@@ -7,12 +7,12 @@
   vars:
     operator_mode: "applicationMonitoring"
 
-- include_role:
-    name: "dt-oneagent-classic"
 
 - include_role:
     name: "app-unguard-current"
 
+- include_role:
+    name: "dt-oneagent-classic"
 - include_role:
     name: "app-webgoat"
 
