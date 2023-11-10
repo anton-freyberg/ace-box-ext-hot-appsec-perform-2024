@@ -4,6 +4,7 @@
 
 - include_role:
     name: "dt-operator-anton"
+  vars:
     operator_mode: "applicationMonitoring"
 
 - include_role:
