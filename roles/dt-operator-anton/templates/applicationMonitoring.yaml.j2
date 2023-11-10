@@ -68,10 +68,12 @@ spec:
   # For examples regarding namespaceSelectors, see https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#resources-that-support-set-based-requirements
   #
   namespaceSelector:
-   matchExpressions:
-    - key: "{{ dt_operator_app_only_namespace_key }}"
-      operator: In
-      values: "{{ dt_operator_app_only_namespace_value}}"
+   matchLabels:
+     {{ dt_operator_app_only_namespace_key }}: {{ dt_operator_app_only_namespace_value}}
+   #matchExpressions:
+   # - key: "{{ dt_operator_app_only_namespace_key }}"
+   #   operator: In
+   #   values: "{{ dt_operator_app_only_namespace_value}}"
 
   # Configuration for OneAgent instances
   #
