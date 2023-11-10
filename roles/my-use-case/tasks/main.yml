@@ -3,19 +3,11 @@
     name: "microk8s"
 
 - include_role:
-    name: "dt-operator-anton"
-  vars:
-    operator_mode: "applicationMonitoring"
-
-
-- include_role:
-    name: "app-unguard-current"
-
-- include_role:
     name: "dt-oneagent-classic"
 - include_role:
     name: "app-webgoat"
-
+- include_role:
+    name: "app-unguard-current"
 - include_role:
     name: app-webgoat
     tasks_from: deploy-ingress
