@@ -7,7 +7,7 @@
 - include_role:
     name: "app-webgoat"
 - include_role:
-    name: "app-unguard-current"
+    name: "app-unguard"
 - include_role:
     name: app-webgoat
     tasks_from: deploy-ingress
