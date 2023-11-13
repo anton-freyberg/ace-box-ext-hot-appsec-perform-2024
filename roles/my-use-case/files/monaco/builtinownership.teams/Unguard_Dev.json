@@ -1,0 +1,24 @@
+{
+  "name": "Unguard Dev",
+  "identifier": "Unguard_Dev",
+  "supplementaryIdentifiers": [
+    {
+      "supplementaryIdentifier": "unguard"
+    }
+  ],
+  "responsibilities": {
+    "development": true,
+    "security": true,
+    "operations": true,
+    "infrastructure": false,
+    "lineOfBusiness": false
+  },
+  "contactDetails": [
+    {
+      "integrationType": "EMAIL",
+      "email": "anton.freyberg@dynatrace.com"
+    }
+  ],
+  "links": [],
+  "additionalInformation": []
+}

@@ -1,0 +1,24 @@
+{
+  "name": "WebGoat Dev",
+  "identifier": "WebGoat_Dev",
+  "supplementaryIdentifiers": [
+    {
+      "supplementaryIdentifier": "webgoat"
+    }
+  ],
+  "responsibilities": {
+    "development": true,
+    "security": true,
+    "operations": true,
+    "infrastructure": false,
+    "lineOfBusiness": false
+  },
+  "contactDetails": [
+    {
+      "integrationType": "EMAIL",
+      "email": "anton.freyberg@dynatrace.com"
+    }
+  ],
+  "links": [],
+  "additionalInformation": []
+}

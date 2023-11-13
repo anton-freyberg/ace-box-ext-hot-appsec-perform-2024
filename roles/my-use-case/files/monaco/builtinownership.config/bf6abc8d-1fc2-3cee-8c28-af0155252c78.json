@@ -1,0 +1,16 @@
+{
+  "ownershipIdentifiers": [
+    {
+      "enabled": true,
+      "key": "App"
+    },
+    {
+      "enabled": true,
+      "key": "dt.owner"
+    },
+    {
+      "enabled": true,
+      "key": "owner"
+    }
+  ]
+}

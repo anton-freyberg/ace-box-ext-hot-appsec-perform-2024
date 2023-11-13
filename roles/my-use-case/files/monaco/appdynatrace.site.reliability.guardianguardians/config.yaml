@@ -1,0 +1,11 @@
+configs:
+- id: security-gate
+  config:
+    name: Security Gate
+    template: security_gate.json
+    skip: false
+  type:
+    settings:
+      schema: app:dynatrace.site.reliability.guardian:guardians
+      schemaVersion: 1.1.1
+      scope: environment

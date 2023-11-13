@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "tags": [],
+  "variables": [],
+  "objectives": [
+    {
+      "name": "saturation",
+      "objectiveType": "REFERENCE_SLO",
+      "referenceSlo": "func:slo.golden_signals_saturation",
+      "comparisonOperator": "GREATER_THAN_OR_EQUAL"
+    }
+  ]
+}
