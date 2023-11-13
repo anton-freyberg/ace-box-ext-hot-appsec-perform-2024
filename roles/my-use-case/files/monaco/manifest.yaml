@@ -6,17 +6,18 @@ projects:
 environmentGroups:
 - name: default
   environments:
-  - name: pzt
-    url:
-      value: https://pzt27251.sprint.apps.dynatracelabs.com
-    auth:
-      token:
-        type: environment
-        name: DYN_API_TOKEN_PZT
-      oAuth:
-        clientId:
-          name: CLIENT_ID_PZT
-        clientSecret:
-          name: CLIENT_SECRET_PZT
-        tokenEndpoint:
-              value: https://sso-sprint.dynatracelabs.com/sso/oauth2/token
+      - name: staging-environment
+        url:
+          type: environment
+          value: DT_PLATFORM_TENANT_URL
+        auth:
+          token:
+            name: DT_API_TOKEN
+          oAuth:
+            clientId:
+              name: DT_OAUTH_CLIENT_ID
+            clientSecret:
+              name: DT_OAUTH_CLIENT_SECRET
+            tokenEndpoint:
+              type: environment
+              value: DT_OAUTH_SSO_ENDPOINT
