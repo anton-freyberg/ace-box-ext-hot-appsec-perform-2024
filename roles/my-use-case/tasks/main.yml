@@ -8,13 +8,10 @@
     name: "app-webgoat"
 - include_role:
     name: "app-unguard"
-- include_role:
-    name: app-unguard
-    tasks_from: apply-dt-configuration
+
 - include_role:
     name: app-webgoat
     tasks_from: deploy-ingress
-
 - include_role:
     name: app-webgoat
     tasks_from: source-endpoints
