@@ -1,0 +1,22 @@
+manifestVersion: "1.0"
+projects:
+- name: Basic
+- name: pzt
+- name: deploy
+environmentGroups:
+- name: default
+  environments:
+  - name: pzt
+    url:
+      value: https://pzt27251.sprint.apps.dynatracelabs.com
+    auth:
+      token:
+        type: environment
+        name: DYN_API_TOKEN_PZT
+      oAuth:
+        clientId:
+          name: CLIENT_ID_PZT
+        clientSecret:
+          name: CLIENT_SECRET_PZT
+        tokenEndpoint:
+              value: https://sso-sprint.dynatracelabs.com/sso/oauth2/token
