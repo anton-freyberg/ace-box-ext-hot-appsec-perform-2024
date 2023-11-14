@@ -15,8 +15,7 @@
     var: ansible_env
 
 - name: Print all variables on a VM
-  gather_facts: yes  # This is usually the default, but it's here for clarity
-
+  gather_facts: yes 
   tasks:
     - name: Print all gathered facts
       debug:
