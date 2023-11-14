@@ -13,7 +13,7 @@
   vars:
     monaco_projects_root: "{{ role_path }}/files/monaco"  # monaco projects root folder path
     monaco_project: "deploy" # selection of projects or all projects under the root path if set empty
-    monaco_manifest_path: "{{ role_path }}/files/monaco/manifest.yaml"
+    monaco_manifest_path: "manifest.yaml"
 
 - include_role:
     name: "app-webgoat"
