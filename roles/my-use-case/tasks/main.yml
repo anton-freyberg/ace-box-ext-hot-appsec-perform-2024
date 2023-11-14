@@ -10,6 +10,10 @@
 - set_fact:
     role_path_abs: "{{ role_path }}"
 
+- name: Print all environment variables
+  debug:
+    var: ansible_env
+
 - include_role:
     name: monaco-v2
     tasks_from: apply-monaco
