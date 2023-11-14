@@ -27,8 +27,6 @@
       DT_OAUTH_CLIENT_ID: "{{ extra_vars.dt_oauth_client_id }}"
       DT_OAUTH_CLIENT_SECRET: "{{ extra_vars.dt_oauth_client_secret }}"
       DT_OAUTH_SSO_ENDPOINT: "{{ extra_vars.dt_oauth_sso_endpoint }}"
-      AWX_CONTROLLER_TOKEN: "{{ awx_controller_token }}"
-      AWX_URL: "{{ ingress_protocol }}://ansible.{{ ingress_domain }}/api/v2/"
 
 - include_role:
     name: "app-webgoat"
