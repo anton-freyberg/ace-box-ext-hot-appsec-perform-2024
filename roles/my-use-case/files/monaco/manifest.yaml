@@ -1,12 +1,10 @@
 manifestVersion: "1.0"
 projects:
-- name: Basic
-- name: pzt
 - name: deploy
 environmentGroups:
 - name: default
   environments:
-      - name: staging-environment
+      - name: perform
         url:
           type: environment
           value: DT_PLATFORM_TENANT_URL
