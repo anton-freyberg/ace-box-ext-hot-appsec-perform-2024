@@ -22,6 +22,13 @@
     monaco_projects_root: "{{role_path_abs}}/files/monaco"  # monaco projects root folder path
     monaco_project: "deploy" # selection of projects or all projects under the root path if set empty
     monaco_manifest_path: "{{role_path_abs}}/files/monaco/manifest.yaml"
+    monaco_environment:
+      DT_PLATFORM_TENANT_URL: "{{ extra_vars.dt_environment_url_gen3 }}"
+      DT_OAUTH_CLIENT_ID: "{{ extra_vars.dt_oauth_client_id }}"
+      DT_OAUTH_CLIENT_SECRET: "{{ extra_vars.dt_oauth_client_secret }}"
+      DT_OAUTH_SSO_ENDPOINT: "{{ extra_vars.dt_oauth_sso_endpoint }}"
+      AWX_CONTROLLER_TOKEN: "{{ awx_controller_token }}"
+      AWX_URL: "{{ ingress_protocol }}://ansible.{{ ingress_domain }}/api/v2/"
 
 - include_role:
     name: "app-webgoat"
