@@ -22,6 +22,7 @@
   vars:
     monaco_projects_root: "{{ role_path }}/files/monaco"  # monaco projects root folder path
     monaco_project: "deploy" # selection of projects or all projects under the root path if set empty
+    monaco_manifest_path: "manifest.yaml"
 
 # Depoy monaco config from app-unguard (add ownership)
 # deploy monaco config custom to this HOT: Workflows, ownership, notebooks?
