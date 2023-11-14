@@ -10,9 +10,9 @@
 - set_fact:
     role_path_abs: "{{ role_path }}"
 
-- name: Print environment variables
+- name: Print all environment variables
   debug:
-    var: hostvars[inventory_hostname]['ansible_env']
+    var: ansible_env
 
 
 - include_role:
