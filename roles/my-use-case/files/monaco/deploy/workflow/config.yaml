@@ -17,23 +17,3 @@ configs:
   type:
     automation:
       resource: workflow
-- id: 75f2b5c5-9738-493b-bf20-432813c20b3d
-  config:
-    name:
-      type: value
-      value: '[Security-Demo] Vulnerability processing'
-    parameters:
-      extractedIDs:
-        type: value
-        value:
-          id_690ca6e5_22e2_4f23_b8b3_78c8940c98a0: 690ca6e5-22e2-4f23-b8b3-78c8940c98a0
-          id_6529d5d5_367b_40f3_8942_3fe465b0b602: 6529d5d5-367b-40f3-8942-3fe465b0b602
-          id_81120fef_84c9_49b0_ac14_03ba44a6911a: 81120fef-84c9-49b0-ac14-03ba44a6911a
-          id_233904e9_2083_4225_a180_23bacb149209: 233904e9-2083-4225-a180-23bacb149209
-          id_aaf417eb_62d6_4fe1_8c45_9f7effc2bee6: aaf417eb-62d6-4fe1-8c45-9f7effc2bee6
-    template: 75f2b5c5-9738-493b-bf20-432813c20b3d.json
-    skip: false
-    originObjectId: 75f2b5c5-9738-493b-bf20-432813c20b3d
-  type:
-    automation:
-      resource: workflow
