@@ -1,4 +1,5 @@
 ---
+
 - include_role:
     name: "microk8s"
 
@@ -14,6 +15,21 @@
   debug:
     var: ansible_env
 
+- include_role:
+    name: dt-platform
+    tasks_from: ensure-app
+  vars:
+    dt_app_id: "{{ item }}"
+    dt_environment_url_gen3: "{{ extra_vars.dt_environment_url_gen3 }}"
+    dt_oauth_sso_endpoint: "{{ extra_vars.dt_oauth_sso_endpoint }}"
+    dt_oauth_client_id: "{{ extra_vars.dt_oauth_client_id }}"
+    dt_oauth_client_secret: "{{ extra_vars.dt_oauth_client_secret }}"
+    dt_oauth_account_urn: "{{ extra_vars.dt_oauth_account_urn }}"
+  loop:
+    - "dynatrace.redhat.ansible"
+    - "dynatrace.ownership"
+    - "dynatrace.davis.workflow.actions"
+    - "dynatrace.site.reliability.guardian"
 
 - include_role:
     name: monaco-v2
@@ -39,4 +55,3 @@
 - include_role:
     name: app-webgoat
     tasks_from: source-endpoints
-
