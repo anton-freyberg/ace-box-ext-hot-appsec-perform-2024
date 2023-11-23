@@ -80,14 +80,14 @@
   become: true
   become_user: root
   command:
-    cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat-Lessons'
+    cmd: 'git config --system --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat-Lessons'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat-Lessons'
 
 - name: make webgoat repo safe
   become: true
   become_user: root
   command:
-    cmd: 'git config --global --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat'
+    cmd: 'git config --system --add safe.directory /home/ace/ansible/roles/app-webgoat/files/repo_latest/WebGoat'
     chdir: '{{ role_path }}/files/repo_latest/WebGoat'
 
 - name: Compiling Lessons
