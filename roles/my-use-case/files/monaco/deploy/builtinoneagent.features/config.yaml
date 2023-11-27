@@ -1,0 +1,361 @@
+configs:
+- id: 08cef9b3-79f7-3cbb-85bf-1d73b1f04298
+  config:
+    template: JAVA_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjJlMTQyZDYtYzQ0ZS0zMmE4LThlYTMtYWYxN2JhZDY5Yjk3vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 09134bd3-0272-3f54-8b90-270e9df68951
+  config:
+    template: SENSOR_DOTNET_IBM_MQ_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODM5ZjFlNjAtOWQ0NS0zODlhLTkwODMtNDRjYjc4OWQ1ZmY1vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 0d4d6845-d6d8-3806-a429-a5260496ff63
+  config:
+    template: DOTNET_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDI2MDc2ZjUtNTFjNC0zZWJiLTg2M2UtYmVhNzM4MzIwYjE3vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 16dc7a98-a198-327f-b886-46130b6335d9
+  config:
+    template: SENSOR_NODEJS_GRPC_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNDE2ZTVhZDItZjQ4MC0zMTM2LTllNmMtODkxOWViYjg5MTQzvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 1bf83ea6-1a00-33cc-8a42-1ce22589409e
+  config:
+    template: DOTNET_ASP_SENSOR_V2_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjU4OGFhNTAtYzZlMC0zZTYwLTlhNDgtZjI5OWY2OWQ2YmVkvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 2cfc0515-01b5-3a66-b70e-050bf708842b
+  config:
+    template: JAVA_ALLOCATION_PROFILING_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGRjYzc1OTItZmU3NS0zNDJlLTg0ZjctZGRlMDk3OTk2YmI1vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 3920fbbc-dad7-3dff-942a-cc49a5de2322
+  config:
+    template: SENSOR_JAVA_IMS_ITRA_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOWY5OGFlMDAtMGFiYS0zODlkLWIxMTctMzgzZDE4ZjI0MjRlvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 3e558f37-4953-38f6-90db-dfec0d6e9b95
+  config:
+    template: SENSOR_DOTNET_GRPC_ASPNETCORE_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjA4MjU5MjItYzU0MS0zZTlkLWFmZjYtMGZkOWU1YzQ0Yjg0vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 402fc88b-766f-3875-883c-89e3935b6cd0
+  config:
+    template: SENSOR_NODEJS_IOREDIS_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTgzNmU1YmEtOTMxNi0zMDViLTg3NGMtODk5YzliMGNkNjA4vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 4dd0abcf-c264-3e7c-adcb-cb3dd6f1545e
+  config:
+    template: NODEJS_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZjMxYzc2NDgtMTc3ZS0zOGUxLWE2M2EtMmMxMjIwYjdlMjA0vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 66aedd5a-ee79-31f8-af66-75401c012265
+  config:
+    template: SENSOR_JAVA_AKKA_HTTP_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOWEyZDdkY2QtYzI4ZS0zODM2LWIzNTktNzdiMmYxM2ZhMmNmvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 6d50d7a2-e940-37e9-bdc6-9b100713f677
+  config:
+    template: SENSOR_GO_SQL_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjE1ZmEzZWYtNzEzNy0zM2MwLWEwYzEtZGQzNjk3OTYxYmRivu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 757376a1-808b-37ce-8709-1914dbb95592
+  config:
+    template: ODIN_ONEAGENT_CORRELATION_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZTQ1YjM4NTItNjFlMC0zMjk5LWEzNDQtZmM0MmJiNmY0Yzhkvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 76f8a32f-348d-3d84-90a0-2089be923005
+  config:
+    template: SENSOR_NODEJS_GRPCJS_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkN2JkYzkwMmItMGMxMi0zNWNkLWExNjctNjZiMTA3NWNmNjFlvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 78dd5cb9-f9d2-310d-88ae-c2cdcf52e94d
+  config:
+    template: SENSOR_JAVA_CTG_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDZmMTUyNjYtNDA0My0zZmI2LTk3NmYtNjQ5MjBmNDA1OWYxvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 8a1defce-8471-361d-8726-aedb14128bd7
+  config:
+    template: SENSOR_NODEJS_MSSQL_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODExNDYxMjgtMDlmZi0zNTg2LTlmNmMtNTE0NmE2ZjQxYjNkvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 940b4665-ab3d-3042-8423-ab4877f89f4e
+  config:
+    template: SENSOR_GO_GRPC_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjRkNWRmZjAtZDBlMy0zNTU1LTgxYjYtNzgwZTAyMmVhOTE1vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 9687c2aa-1b64-3620-b884-8f63bf7f96c9
+  config:
+    template: JAVA_MQ_TAGGING_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTIxMDU2NzUtZjM5Mi0zNDE0LTlkZTUtNGQwYTJjOTE3ZDc5vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 9af56dca-6939-388c-9d41-dee2afe0885d
+  config:
+    template: IBM_MQ_TRACING_FEATURE_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODZmOGZhYWUtOTNhZS0zNzdmLTgzYzAtYzY1YzYzYmM1YjQ3vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: 9ee233bb-7d38-3229-904a-2d66c6de8fe3
+  config:
+    template: DOTNET_INSTRUMENTATION_CACHE_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGFhM2RmNjMtMjMwYi0zYTgxLWE0ODItYTUzM2FjMjA1MzM4vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: a5d5eef0-f9e7-3069-9f5b-007e9112c018
+  config:
+    template: SENSOR_DOTNET_AMQP_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNmJlYjU4Y2ItMGFmMy0zODI5LWI2YjItM2QyNjkzMzQ3YmQ0vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: a7680517-6732-32e8-bacc-0127c3732176
+  config:
+    template: NODEJS_HTTP2_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDY1Mjk3NmQtNDBjOS0zY2Q3LWJjMmItY2JlYTM4YTgzODM0vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: a95f1094-e52c-36a0-b334-b6c4d1c25f44
+  config:
+    template: DOTNET_ASYNC_AUTOSENSOR_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNDE1M2I0M2UtOWY2MS0zNGQ2LTgwNTctNjhhYjcwN2RiYzRhvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: aea61831-93e4-32f4-8848-151ae49a3b88
+  config:
+    template: PHP_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNmIzY2JiNTgtY2QxMi0zODc0LTk5MzQtMmMwZjU3NzQwYzM3vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: baa7c6d4-71c7-3bf8-8d65-90a15bcdf6d9
+  config:
+    template: SENSOR_DOTNET_AZUREFUNCTIONS_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMzczMGRjNzMtZDJiNC0zZWRjLTlmYmMtODAyYmMyMmM2YWYyvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: bc037f29-502a-3f26-b54e-1b8423e21629
+  config:
+    template: SENSOR_NODEJS_MYSQL2_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGUzYmZhNGUtNjY1ZS0zODZmLWIxYWYtNzBlYTdhYjI4NzE2vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: bcbc2b48-a097-32ef-bd67-0ea4ad9c4584
+  config:
+    template: JAVA_CQL_EXECUTEASYNC_RT_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTdhOWQwNGEtNzdiOS0zZDM4LTkxOTgtNjk4ZjU3NjkwMjgxvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: bf060fcb-c85b-3193-b880-2e98f5eef90c
+  config:
+    template: SENSOR_DOTNET_AZURE_SERVICE_BUS_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTI2ODA1NWEtZTAxOS0zNzExLWFjOTEtMDQyNjM3MTQzMjk0vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: d08e0b89-18c2-3e54-8a40-277e2b847bf6
+  config:
+    template: JAVA_CASP_CALL_COUNTER.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZDg4NWY0MjEtN2JiMi0zYzcxLWEzMzUtOWNkMTIwNzFlYjM2vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: e1770a91-57e2-3217-813a-a37132e6e464
+  config:
+    template: SENSOR_DOTNET_MONGODB_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjUzZWYzMmEtNjU3NS0zZjI3LWI4NjYtZTMzMzVhZGQ5OWI1vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: e4299e46-ffad-3d14-9f7d-da283f81241d
+  config:
+    template: SENSOR_NODEJS_COUCHBASE_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjJkZTkxYTctMWVhMi0zYmM0LWE1NTktNzRkNmQ2ZDgyZmY4vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: ee12392d-51ae-3f5c-a793-9afb9b03afa1
+  config:
+    template: SENSOR_JAVA_IMSSOAP_TAGGING_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMWU0ODE2ZjgtOTMzMy0zOWQxLThmYmQtNTkzMjg2ZGFkYWNhvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: f2a5ec8b-3c0c-344e-ab3f-07ce4bfc1d24
+  config:
+    template: SENSOR_DOTNET_REMOTING_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOGNlNzBiYzEtYWQ4NC0zZDk0LWJkMDgtMjBiNTFiYjUyOTA1vu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: f72a8e35-52d9-3fd4-a6f9-b9692150b9c5
+  config:
+    template: OPENTRACINGNATIVE_ENVOY_ISTIO_SIDECAR_MONITORING_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZTJkNDQzY2UtOWY1Yy0zNGRhLWIyOTctZjc3NWQ0Y2JlNWVmvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: ff3c89c0-a743-3509-bda4-d41bcf239f0d
+  config:
+    template: JAVA_AKKA_HTTP_CLIENT_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMmQyNGM3YzUtYjM5MC0zOGQxLTkyMWQtY2ExMTQ3OWI0M2Njvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
+- id: ff9194a1-922d-3c4f-bee7-7a73958a6862
+  config:
+    template: JAVA_JETTY_HANDLER_FORCIBLE.json
+    skip: false
+    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZDYyMmZhODItMDZjNS0zYWJhLWE3ZDgtYjgxMGRjYzE0N2Yxvu9U3hXa3q0
+  type:
+    settings:
+      schema: builtin:oneagent.features
+      schemaVersion: 1.5.9
+      scope: environment
