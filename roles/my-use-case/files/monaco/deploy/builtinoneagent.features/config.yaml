@@ -3,7 +3,6 @@ configs:
   config:
     template: JAVA_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjJlMTQyZDYtYzQ0ZS0zMmE4LThlYTMtYWYxN2JhZDY5Yjk3vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -13,7 +12,6 @@ configs:
   config:
     template: SENSOR_DOTNET_IBM_MQ_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODM5ZjFlNjAtOWQ0NS0zODlhLTkwODMtNDRjYjc4OWQ1ZmY1vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -23,7 +21,6 @@ configs:
   config:
     template: DOTNET_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDI2MDc2ZjUtNTFjNC0zZWJiLTg2M2UtYmVhNzM4MzIwYjE3vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -33,7 +30,6 @@ configs:
   config:
     template: SENSOR_NODEJS_GRPC_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNDE2ZTVhZDItZjQ4MC0zMTM2LTllNmMtODkxOWViYjg5MTQzvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -43,7 +39,6 @@ configs:
   config:
     template: DOTNET_ASP_SENSOR_V2_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjU4OGFhNTAtYzZlMC0zZTYwLTlhNDgtZjI5OWY2OWQ2YmVkvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -53,7 +48,6 @@ configs:
   config:
     template: JAVA_ALLOCATION_PROFILING_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGRjYzc1OTItZmU3NS0zNDJlLTg0ZjctZGRlMDk3OTk2YmI1vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -63,7 +57,6 @@ configs:
   config:
     template: SENSOR_JAVA_IMS_ITRA_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOWY5OGFlMDAtMGFiYS0zODlkLWIxMTctMzgzZDE4ZjI0MjRlvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -73,7 +66,6 @@ configs:
   config:
     template: SENSOR_DOTNET_GRPC_ASPNETCORE_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjA4MjU5MjItYzU0MS0zZTlkLWFmZjYtMGZkOWU1YzQ0Yjg0vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -83,7 +75,6 @@ configs:
   config:
     template: SENSOR_NODEJS_IOREDIS_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTgzNmU1YmEtOTMxNi0zMDViLTg3NGMtODk5YzliMGNkNjA4vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -93,7 +84,6 @@ configs:
   config:
     template: NODEJS_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZjMxYzc2NDgtMTc3ZS0zOGUxLWE2M2EtMmMxMjIwYjdlMjA0vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -103,7 +93,6 @@ configs:
   config:
     template: SENSOR_JAVA_AKKA_HTTP_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOWEyZDdkY2QtYzI4ZS0zODM2LWIzNTktNzdiMmYxM2ZhMmNmvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -113,7 +102,6 @@ configs:
   config:
     template: SENSOR_GO_SQL_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjE1ZmEzZWYtNzEzNy0zM2MwLWEwYzEtZGQzNjk3OTYxYmRivu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -123,7 +111,6 @@ configs:
   config:
     template: ODIN_ONEAGENT_CORRELATION_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZTQ1YjM4NTItNjFlMC0zMjk5LWEzNDQtZmM0MmJiNmY0Yzhkvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -133,7 +120,6 @@ configs:
   config:
     template: SENSOR_NODEJS_GRPCJS_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkN2JkYzkwMmItMGMxMi0zNWNkLWExNjctNjZiMTA3NWNmNjFlvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -143,7 +129,6 @@ configs:
   config:
     template: SENSOR_JAVA_CTG_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDZmMTUyNjYtNDA0My0zZmI2LTk3NmYtNjQ5MjBmNDA1OWYxvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -153,7 +138,6 @@ configs:
   config:
     template: SENSOR_NODEJS_MSSQL_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODExNDYxMjgtMDlmZi0zNTg2LTlmNmMtNTE0NmE2ZjQxYjNkvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -163,7 +147,6 @@ configs:
   config:
     template: SENSOR_GO_GRPC_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjRkNWRmZjAtZDBlMy0zNTU1LTgxYjYtNzgwZTAyMmVhOTE1vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -173,7 +156,6 @@ configs:
   config:
     template: JAVA_MQ_TAGGING_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTIxMDU2NzUtZjM5Mi0zNDE0LTlkZTUtNGQwYTJjOTE3ZDc5vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -183,7 +165,6 @@ configs:
   config:
     template: IBM_MQ_TRACING_FEATURE_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkODZmOGZhYWUtOTNhZS0zNzdmLTgzYzAtYzY1YzYzYmM1YjQ3vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -193,7 +174,6 @@ configs:
   config:
     template: DOTNET_INSTRUMENTATION_CACHE_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGFhM2RmNjMtMjMwYi0zYTgxLWE0ODItYTUzM2FjMjA1MzM4vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -203,7 +183,6 @@ configs:
   config:
     template: SENSOR_DOTNET_AMQP_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNmJlYjU4Y2ItMGFmMy0zODI5LWI2YjItM2QyNjkzMzQ3YmQ0vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -213,7 +192,6 @@ configs:
   config:
     template: NODEJS_HTTP2_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMDY1Mjk3NmQtNDBjOS0zY2Q3LWJjMmItY2JlYTM4YTgzODM0vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -223,7 +201,6 @@ configs:
   config:
     template: DOTNET_ASYNC_AUTOSENSOR_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNDE1M2I0M2UtOWY2MS0zNGQ2LTgwNTctNjhhYjcwN2RiYzRhvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -233,7 +210,6 @@ configs:
   config:
     template: PHP_CASP_SOFTWARE_COMPONENT_EXTRACTION_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNmIzY2JiNTgtY2QxMi0zODc0LTk5MzQtMmMwZjU3NzQwYzM3vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -243,7 +219,6 @@ configs:
   config:
     template: SENSOR_DOTNET_AZUREFUNCTIONS_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMzczMGRjNzMtZDJiNC0zZWRjLTlmYmMtODAyYmMyMmM2YWYyvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -253,7 +228,6 @@ configs:
   config:
     template: SENSOR_NODEJS_MYSQL2_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNGUzYmZhNGUtNjY1ZS0zODZmLWIxYWYtNzBlYTdhYjI4NzE2vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -263,7 +237,6 @@ configs:
   config:
     template: JAVA_CQL_EXECUTEASYNC_RT_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTdhOWQwNGEtNzdiOS0zZDM4LTkxOTgtNjk4ZjU3NjkwMjgxvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -273,7 +246,6 @@ configs:
   config:
     template: SENSOR_DOTNET_AZURE_SERVICE_BUS_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOTI2ODA1NWEtZTAxOS0zNzExLWFjOTEtMDQyNjM3MTQzMjk0vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -283,7 +255,6 @@ configs:
   config:
     template: JAVA_CASP_CALL_COUNTER.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZDg4NWY0MjEtN2JiMi0zYzcxLWEzMzUtOWNkMTIwNzFlYjM2vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -293,7 +264,6 @@ configs:
   config:
     template: SENSOR_DOTNET_MONGODB_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkNjUzZWYzMmEtNjU3NS0zZjI3LWI4NjYtZTMzMzVhZGQ5OWI1vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -303,7 +273,6 @@ configs:
   config:
     template: SENSOR_NODEJS_COUCHBASE_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMjJkZTkxYTctMWVhMi0zYmM0LWE1NTktNzRkNmQ2ZDgyZmY4vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -313,7 +282,6 @@ configs:
   config:
     template: SENSOR_JAVA_IMSSOAP_TAGGING_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMWU0ODE2ZjgtOTMzMy0zOWQxLThmYmQtNTkzMjg2ZGFkYWNhvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -323,7 +291,6 @@ configs:
   config:
     template: SENSOR_DOTNET_REMOTING_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkOGNlNzBiYzEtYWQ4NC0zZDk0LWJkMDgtMjBiNTFiYjUyOTA1vu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -333,7 +300,6 @@ configs:
   config:
     template: OPENTRACINGNATIVE_ENVOY_ISTIO_SIDECAR_MONITORING_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZTJkNDQzY2UtOWY1Yy0zNGRhLWIyOTctZjc3NWQ0Y2JlNWVmvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -343,7 +309,6 @@ configs:
   config:
     template: JAVA_AKKA_HTTP_CLIENT_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkMmQyNGM3YzUtYjM5MC0zOGQxLTkyMWQtY2ExMTQ3OWI0M2Njvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
@@ -353,7 +318,6 @@ configs:
   config:
     template: JAVA_JETTY_HANDLER_FORCIBLE.json
     skip: false
-    originObjectId: vu9U3hXa3q0AAAABABlidWlsdGluOm9uZWFnZW50LmZlYXR1cmVzAAZ0ZW5hbnQABnRlbmFudAAkZDYyMmZhODItMDZjNS0zYWJhLWE3ZDgtYjgxMGRjYzE0N2Yxvu9U3hXa3q0
   type:
     settings:
       schema: builtin:oneagent.features
